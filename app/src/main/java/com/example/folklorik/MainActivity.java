@@ -1,6 +1,9 @@
 package com.example.folklorik;
 
+import static java.security.AccessController.getContext;
+
 import android.os.Bundle;
+import android.provider.BaseColumns;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +12,10 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    FolklorikContract.FolklorikDbHelper dbHelper = new FolklorikContract.FolklorikDbHelper(getApplicationContext());
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
