@@ -13,9 +13,6 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    FolklorikContract.FolklorikDbHelper dbHelper = new FolklorikContract.FolklorikDbHelper(getApplicationContext());
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
