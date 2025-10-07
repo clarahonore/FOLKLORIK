@@ -2,6 +2,8 @@ package com.example.folklorik;
 
 import static java.security.AccessController.getContext;
 
+import android.content.ContentValues;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.provider.BaseColumns;
 
